@@ -126,6 +126,7 @@ span {
   box-shadow: 0 0 1rem var(--main-color);
 }
 .btn {
+  cursor: pointer;
   display: inline-block;
   padding: 1rem 2.8rem;
   background: var(--main-color);
@@ -272,7 +273,7 @@ span {
 }
 
 .description p {
-  color: #b0b0ba;
+  color: #ffffff;
   padding-top: 5px;
 }
 
@@ -312,67 +313,72 @@ span {
   background-image: url("../images/portfolio6.jpg");
 }
 /*end*/
-
-.contact h2 {
+.container-form{
+  padding-top: 20px;
+  padding-bottom: 20px;
   position: relative;
-  top: -10px;
-  margin-bottom: 3rem;
+  left: 25%;
+  right: 25%;
+ border-radius: 25px;
+ width: 500px;
+ background: var(--second-bg-color);
 }
-
-.contact form {
-  color: var(--text-color);
-
-  padding: 30px;
-  width: 600px;
-  background-color: var(--second-bg-color);
-  border-radius: 25px;
-   position: relative;
-   left:25%;
-}
-.contact-box {
-
-  display: flex;
-  flex-direction: column;
-  margin: 40px 0;
-}
-.contact-form label {
+.contact-container label ,
+.contact-container form,
+.contact-container input ,
+.contact-container textarea ,
+.contain {
+  position: relative;
+  border-radius: 15px;
   margin-bottom: 10px;
-  font-size: 2.6rem;
+  width: 500px;
+  display: block;
+  flex-direction: column;
+  background: var(--second-bg-color);
+  justify-content: center;
+  align-items: center;
 }
+.container-form:hover {
 
-.contact-form input,
-textarea {
-  padding: 15px;
-  font-size: 2.6rem;
+ border: 0.5px solid var(--main-color);
+
 }
-.contact-form textarea {
+.contact-container input,
+.contact-container textarea ,
+.contain {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 460px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: transparent;
+}
+.contact-container textarea {
   resize: vertical;
 }
-.contact-form .btn {
-  padding: 12px;
-  width: 100%;
+.contact-container label {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 460px;
+  margin-left: 10px;
+margin-right: 10px;
+background: transparent;
 }
-textarea {
-  resize: vertical;
-}
-.btn1 {
+#btn {
+  cursor: pointer;
+  display: inline-block;
   padding: 1rem 2.8rem;
   background: var(--main-color);
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1.6rem;
   color: var(--second-bg-color);
-  letter-spacing: 0.1rem;
-  font-weight: 600;
   transition: 0.5 ease;
 }
-.btn1:hover {
+#btn:hover {
   box-shadow: none;
 }
-.msg-status {
-  display: none;
-}
-
 .footer {
   display: flex;
   justify-content: space-between;
@@ -573,4 +579,35 @@ font-size: 5rem;
 
 }
 
+.widget {
+  width: 500px;
+  background: var(--bg-color);
+border-radius: 25px;
+position: absolute;
+top: 0;
+left: 50%;
+transform: translate(-50%, -50%) scale(0.1);
+text-align: center;
+padding: 0 30px 30px;
+color: #fff;
+visibility: hidden;
+transition: transform 0.4s, top 0.4s;
+}
 
+.open-widget {
+  visibility: visible;
+  top:50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+.widget h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin: 30px 0 10px;
+
+}
+.widget button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+
+}

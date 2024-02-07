@@ -68,3 +68,14 @@ const typed = new Typed('.multiple-text', {
   backDelay: 1000,
  loop:true
 });
+
+
+/*============= widget ============ */
+let widget = document.getElementById('widget');
+
+function openWidget() {
+  widget.classList.add("open-widget");
+}
+function closeWidget() {
+  widget.classList.remove("open-widget");
+}

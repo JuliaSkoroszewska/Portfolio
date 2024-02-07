@@ -35,7 +35,7 @@
     <!-- home section design -->
     <section class="home" id="home">
       <div class="home-content">
-        <h3>Hello, It's Me</h3>
+        <h3>Hello, My name is</h3>
         <h1>Julia Skoroszewska</h1>
         <h3>And I'm a young <span class="multiple-text"></span></h3>
         <p>
@@ -51,7 +51,7 @@
           <a href="#"><i class="bx bxl-instagram-alt"></i></a>
           <a href="#"><i class="bx bxl-linkedin"></i></a>
         </div>
-        <a href="#" class="btn">Download CV</a>
+        <a href="#" download="" class="btn">Download CV</a>
       </div>
       <div class="home-img">
         <img src="images/home.png" alt="My photo" />
@@ -73,7 +73,14 @@
           Every day I expand my skills and strive to become better in this
           profession.
         </p>
-        <a href="#" class="btn"> Read More </a>
+        <button type="submit" class="btn" onclick="openWidget()"> Read More </button>
+        <div class="widget" id="widget">
+         <h2>More about me:</h2>
+          <p> I am precise and creative in finding solutions to problems, I skillfully create interfaces based on modern solutions, including: RWD, i.e. fluid grid, I know HTML5 and CSS well and I know the basics of JavaScript and I can use it at work, I also know SQL, I can write queries, create data for databases, change and send them. Creating a website from the provided mockups or inventing it myself will not be a problem for me. I can use Figma, Canva,
+ Photoshop, git, github and Visual Studio Code.</p>
+ <button type="button" class="btn" onclick="closeWidget()">Come back</button>
+ </div>
+ </div>
       </div>
     </section>
     <!-- services section design -->
@@ -84,12 +91,11 @@
           <i class='bx bxl-html5' ></i>
           <h3>HTML</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-            unde incidunt deserunt officiis quae saepe iusto error suscipit vero
-            fugit, eum consequatur corrupti nostrum voluptatem rem aspernatur,
-            dolorum, quos vel.
+I have been learning it for 3 years, I know both the basics - writing a page in an ordinary notebook is ot a challenge for me, as well as more advanced syntax in the program. I can easily combine it with CSS and JavaScript, I find and fix my mistakes, I am distinguished by my inquistiveness and the fact that I do not give up quickly!
+
+      
           </p>
-          <a href="" class="btn">Read More</a>
+          
         </div>
 
 
@@ -99,12 +105,9 @@
          <i class='bx bxs-file-css' ></i>
           <h3>CSS</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-            unde incidunt deserunt officiis quae saepe iusto error suscipit vero
-            fugit, eum consequatur corrupti nostrum voluptatem rem aspernatur,
-            dolorum, quos vel.
+           I have been learning it for a year, i know all the basics and advanced syntax very well, I create responsive websites with its help and create basics animations.
           </p>
-          <a href="" class="btn">Read More</a>
+          
         </div>
 
 
@@ -114,12 +117,11 @@
           <i class='bx bxs-file-js' ></i>
           <h3>JavaScript</h3>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-            unde incidunt deserunt officiis quae saepe iusto error suscipit vero
-            fugit, eum consequatur corrupti nostrum voluptatem rem aspernatur,
-            dolorum, quos vel.
+            I've been learning it for several months, I know the basics and I can easily add Interactive UI elements, Animations and create various visual effects.
           </p>
-          <a href="" class="btn">Read More</a>
+          <div class="widget">
+          
+         
         </div>
         
       </div>
@@ -137,9 +139,8 @@
                 <div class="row">
                     <div class="icon">1</div>
                     <div class="description">
-                        <h4>Winter</h4>
-                        <p>Winter has so much to offer -
-                         creative activities</p>
+                        <h4>Website</h4>
+                        <p>A dynamic website about animals, with a slider based on HTML, CSS and JAVASCRIPT with manual and automatic control.</p>
                     </div>
                 </div>
             </label>
@@ -148,9 +149,8 @@
                 <div class="row">
                     <div class="icon">2</div>
                     <div class="description">
-                        <h4>Digital Technology</h4>
-                        <p>Gets better every day -
-                         stay tuned</p>
+                        <h4>Website HTML</h4>
+                        <p>A website created in pure HTML format, among others   with a hyperlink in the form of an image, a table, a basic menu and several subpages.</p>
                     </div>
                 </div>
             </label>
@@ -159,8 +159,8 @@
                 <div class="row">
                     <div class="icon">3</div>
                     <div class="description">
-                        <h4>Globalization</h4>
-                        <p>Help people all over the world</p>
+                        <h4>Store Page </h4>
+                        <p>A website designed like an online store with many CSS highlighting effects, various types of animations, hyperlinks, small sliders presenting products and an advanced burger-style menu</p>
                     </div>
                 </div>
             </label>
@@ -169,9 +169,8 @@
                 <div class="row">
                     <div class="icon">4</div>
                     <div class="description">
-                        <h4>New technologies</h4>
-                        <p>Space engineering becomes
-                         more and more advanced</p>
+                        <h4>Mini Projects</h4>
+                        <p>mini projects - RGB mouse lighting tracking on grid made using CSS, JAVASCRIPT, animated graphics cards, hover effects, glass page design, preloader for website and more!d</p>
                     </div>
                 </div>
             </label>
@@ -182,28 +181,36 @@
     <!-- contact section design -->
 <section class="contact" id="Contact">
 <h2 class="heading">Contact <Span>Me!</Span></h2>
-
+<div class="container-form">
 <div class="contact-container">
- <form action="#" method="post">
+  <form action="https://formsubmit.io/send/julia.skoro12@gmail.com" method="POST">
+    <label for="mail">Your Email Adress*</label>
+    <input
+    id="mail"
+    name="mail"
+    type="mail"
+    placeholder="Enter your email address">
 
-       <div class="contact-box">
-        <label for="name"> Full Name:</label>
-          <input type="text" id="name" name="name" required>
-       </div>
+    <label for="name">Your Full Name*</label>
+    <input
+    id="name"
+    name="name"
+    type="name"
+    placeholder="Enter your Full Name">
 
-         <div class="contact-box">
-        <label for="email"> Email Adress:</label>
-          <input type="text" id="email" name="email" required>
-       </div>
-
-         <div class="contact-box">
-        <label for="msg"> Your Message:</label>
-          <textarea type="text" id="msg" name="msg" required></textarea>
-       </div>
-       <buttton class="btn1">Sent!</buttton>
-    </form>
-    <p class="msg-status"></p>
+    <label for="msg">Your Message*</label>
+    <textarea
+    id="msg"
+    name="msg"
+    rows="5"
+    placeholder="Enter your Message">
+  </textarea>
+ <p class="contain">* - Mandatory field to fill out</p>
+  <input value="Sent" type="submit" id="btn"></button>
+  </form>
 </div>
+</div>
+
 </section>
     <!-- footer design -->
 <footer class="footer">
