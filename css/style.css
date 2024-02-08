@@ -332,7 +332,7 @@ span {
 .contain {
   position: relative;
   border-radius: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 2%;
   width: 500px;
   display: block;
   flex-direction: column;
@@ -351,9 +351,9 @@ span {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 460px;
-  margin-left: 10px;
-  margin-right: 10px;
+  max-width: 460px;
+  margin-left: 2%;
+  margin-right: 2%;
   
 }
 .contact-container input,
@@ -368,9 +368,9 @@ span {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 460px;
-  margin-left: 10px;
-margin-right: 10px;
+  max-width: 460px;
+  margin-left: 2%;
+  margin-right: 2%;
 background: transparent;
 }
 #btn {
@@ -382,6 +382,8 @@ background: transparent;
   box-shadow: 0 0 1rem var(--main-color);
   color: #fff;
   transition: 0.5 ease;
+  width: 100%;
+ font-size: 2.6rem;
 }
 #btn:hover {
   box-shadow: none;
@@ -588,12 +590,40 @@ font-size: 5rem;
 
 
 @media  (max-width: 669px) {
+.Portfolio {
+  width: 669px;
+}
     .container , .wrapper , .card  {
     display: block;
-    width: max(40%, 200px);
-
+    max-width: 90%;
+    max-height: 200px;
+    flex: 1 1 200px;
     }
+.contact {
+  max-width: 669px;
+}
+.container-form,
+.contact-container label ,
+.contact-container form,
+.contact-container input ,
+.contact-container textarea ,
+.contain {
+  margin: 2%;
+  padding: 2%;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+  position: relative;
+  left: -10;
+}
 
+.contact-container label ,
+.contact-container form,
+.contact-container input ,
+.contact-container textarea ,
+.contain {
+  max-width:95% ;
+}
 }
 
 .widget {
