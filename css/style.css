@@ -599,7 +599,12 @@ font-size: 5rem;
 
 
 @media  (max-width: 669px) {
-
+.header {
+  width: 669px;
+}
+  .navbar {
+    width:100%;
+  }
 .Portfolio {
   width: 669px;
 }
