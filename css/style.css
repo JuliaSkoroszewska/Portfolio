@@ -599,9 +599,7 @@ font-size: 5rem;
 
 
 @media  (max-width: 669px) {
-   .navbar {
-    height: 50px;
-  }
+
 .Portfolio {
   width: 669px;
 }
