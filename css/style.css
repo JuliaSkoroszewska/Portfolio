@@ -636,6 +636,9 @@ font-size: 5rem;
 .contain {
   max-width:95% ;
 }
+  .widget {
+  max-width: 99%;
+}
 }
 
 .widget {
