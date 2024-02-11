@@ -324,6 +324,7 @@ span {
  border-radius: 25px;
  width: 500px;
  background: var(--second-bg-color);
+  transition: 0.5s ease;
   
 }
 .contact-container label ,
