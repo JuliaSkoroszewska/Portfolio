@@ -324,6 +324,7 @@ span {
  border-radius: 25px;
  width: 500px;
  background: var(--second-bg-color);
+  transitions:4s;
 }
 .contact-container label ,
 .contact-container form,
