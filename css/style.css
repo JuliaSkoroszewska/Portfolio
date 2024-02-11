@@ -324,7 +324,7 @@ span {
  border-radius: 25px;
  width: 500px;
  background: var(--second-bg-color);
-  transitions:4s;
+  
 }
 .contact-container label ,
 .contact-container form,
@@ -344,7 +344,7 @@ span {
 .container-form:hover {
 
  border: 0.5px solid var(--main-color);
-
+transform: scale(1.02);
 }
 .contact-container input,
 .contact-container textarea ,
